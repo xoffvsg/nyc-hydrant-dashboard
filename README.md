@@ -7,7 +7,7 @@ The dashboard can be seen at https://nyc-hydrant-dashboard-xoffvsg.streamlit.app
 <img width="1600" src="https://github.com/xoffvsg/nyc-hydrant-dashboard/blob/main/screenshot_streamlit_app.JPG">
 
 ## Method
-A python file (`app.py`) and the underlaying data (`hydrant_density.parquet`) are stored in a public repo on Github. An App on streamlit.io (free if less than 1 GB memory per app) connects to the app.py file in the Github repo and publishes the dashboard with its own URL accessible to all.
+A python file (`app.py`) and the underlying data (`hydrant_density.parquet`) are stored in a public repo on Github. An App on [streamlit.io](https://streamlit.io) (free if less than 1 GB memory per app) connects to the app.py file in the Github repo and publishes the dashboard with its own URL accessible to all.
 <br><br>
 
 ## Local Alternative
@@ -15,11 +15,12 @@ To run the app locally:
 
 ```bash
 cd <folder containing app.py>
-source .venv/bin/activate
+source .venv/bin/activate   # Mac and Linux
+.venv/Scripts/activate      # Windows
 streamlit run app.py
 ```
 
 The app opens at http://localhost:8501. Press Ctrl+C to stop.
 
 ## License
-MIT
+MIT.
